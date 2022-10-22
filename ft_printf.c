@@ -6,7 +6,7 @@
 /*   By: abouabra <abouabra@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 08:01:40 by abouabra          #+#    #+#             */
-/*   Updated: 2022/10/22 08:06:35 by abouabra         ###   ########.fr       */
+/*   Updated: 2022/10/22 14:39:54 by abouabra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ void	print_specifiers(va_list args, char str, int *tracker)
 	if (str == 'u')
 		ft_put_unsigned_nbr(va_arg(args, unsigned int), tracker);
 	if (str == 'x')
-		ft_put_hex_nbr(va_arg(args, int), 'x', tracker);
+		ft_put_hex_nbr(va_arg(args, unsigned int), 'x', tracker);
 	if (str == 'X')
-		ft_put_hex_nbr(va_arg(args, int), 'X', tracker);
+		ft_put_hex_nbr(va_arg(args, unsigned int), 'X', tracker);
 	if (str == 'p')
 		ft_put_adress(va_arg(args, void *), tracker);
 }
