@@ -6,12 +6,11 @@
 /*   By: abouabra <abouabra@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 08:01:40 by abouabra          #+#    #+#             */
-/*   Updated: 2022/10/12 16:21:15 by abouabra         ###   ########.fr       */
+/*   Updated: 2022/10/22 08:06:35 by abouabra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
 void	adress_helper(unsigned long long nb, int *tracker)
 {
@@ -71,9 +70,7 @@ int	ft_printf(const char *str, ...)
 			print_specifiers(args, *str, &tracker);
 		}
 		else
-		{
 			ft_putchar(*str, &tracker);
-		}
 		str++;
 	}
 	va_end(args);
